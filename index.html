@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun Contact Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="themeBtn">🌙</button>
+  </div>
+
+  <form id="contactForm">
+    <h2 class="form-title">🧾 Contact Form Validation</h2>
+
+    <div class="input-group">
+      <input type="text" id="name" required />
+      <label for="name">👤 Name</label>
+      <div class="error" id="nameError"></div>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="email" required />
+      <label for="email">📧 Email</label>
+      <div class="error" id="emailError"></div>
+    </div>
+
+    <div class="input-group">
+      <textarea id="message" required></textarea>
+      <label for="message">💬 Message</label>
+      <div class="error" id="messageError"></div>
+    </div>
+
+    <button type="submit">Submit</button>
+    <div id="successMessage"></div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
